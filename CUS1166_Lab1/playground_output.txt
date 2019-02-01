@@ -1,0 +1,26 @@
+Hello world
+
+
+The value of a is 25
+The new value of a is 3.87
+The new value of a is Samantha
+a now has a value of True and is type <class 'bool'>
+
+
+The number you entered is positive.
+
+
+What is your name? End of Practice 
+Hello world
+
+
+The value of a is 25
+The new value of a is 3.87
+The new value of a is Samantha
+a now has a value of True and is type <class 'bool'>
+
+
+The number you entered is positive.
+
+
+What is your name? End of Practice 
