@@ -1,0 +1,11 @@
+Frances's grade is 89
+Alex's grade is 97
+Chris's grade is 85
+Ferdinand's grade is 78
+Francisco's grade is 100
+Myrna's grade is 75
+Selina's grade is 83
+Rich's grade is 88
+Richard's grade is 94
+Isabell's grade is 89
+Roster's average score is 87.8
