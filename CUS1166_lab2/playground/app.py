@@ -1,5 +1,5 @@
 #importing flask class from flsk module
-from flask import Flask
+from flask import Flask, render_template
 
 #Creating Instance for flask class
 app = Flask(__name__)
