@@ -1,7 +1,5 @@
-<!DOCTYPE html>
-{% extends layout.html %}
-<html>
-<body>
+{% extends "layout.html" %}
+
   {% block body %}
 
   {% if grade_view == 1 %}
@@ -26,10 +24,8 @@
   </ul>
 
   {% else %}
-  <p style="color:red"><font size="10"><b>There is no available roster with that number, please
-    enter 1,2, or 3. Thank you!</b></p>
+  <p style="color:red;font-size:25px;"><b>There is no available roster with that number, please
+    enter 0,1, or 2. Thank you!</b></p>
   {% endif %}
 
   {% endblock %}
-</body>
-</html>

@@ -1,5 +1,5 @@
 #importing flask class from flsk module
-from flask import Flask, render_template
+from flask import Flask, render_template, url_for
 
 #Creating Instance for flask class
 app = Flask(__name__)
@@ -21,4 +21,4 @@ def roster(grade_view):
     return render_template("roster.html", grade_view=grade_view, class_roster=class_roster)
 
 if __name__ == '__main__':
-    app.run()
+    app.run(debug=True)
