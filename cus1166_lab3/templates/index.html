@@ -1,0 +1,30 @@
+{% 'layout.html' %}
+
+{% block title %}
+    <title> HomePage </title>
+{% endblock title %}
+
+{% block body %}
+  <div class="container"
+    <div class="mt-1"
+      <p> Below are the list of course you can access </p>
+      <p></p>
+      <h2> Courses </h2>
+      <ul>
+      {% for course in courses %}
+        <li>
+          <a href="{{url_for('/register_student/<int:course_id')}}">{{course.course_title}}</a>
+            course number: {{course.course_number}} course ID: {{course.id}}
+        </li>
+      </ul>
+      </div>
+    <div class="mt-1">
+      <form action="{{url_for('/add_course')}}" method="post">
+        <input type="text" name="title" placeholder="Course Title">
+        <input type="text" name="number" placeholder="Course Number">
+        <input type="text" name="id" placeholder="Course ID">
+        <<button type="Submit" name="Add Course"></button>
+    </div>
+  </div>
+
+{% endblock body %}

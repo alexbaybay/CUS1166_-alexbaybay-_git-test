@@ -1,14 +1,23 @@
-from flask_sqlalchemy import flask_sqlalchemy
+from flask_sqlalchemy import SQLAlchemy
 db = SQLAlchemy()
 
+#defines a  course model
 class Course(db.Model):
     __tablename__="courses"
-    #Unique ID
+    #Unique ID Column
     id = db.Colulmn(db.Integer, primary_keys=True)
-    #Course # CUS1166
+    #Course number column (example: CUS1166)
     course_number = db.Colulmn(db.String, nullable=False)
-    #String
+    #title column
     course_title = db.Colulmn(db.String, nullable=False)
+
+    #Specifying relationships in fields
+    students = db.relationship("RegisteredStudents", backref = "courses", lazy=True)
+
+    def add_student(id, name, grade):
+        new_student = RegisteredStudent(id = id, name = name, grade = grade)
+        db.session.add(new_student)
+        db.session.commit()
 
 class RegisteredStudent(db.Model):
     __tablename__="registeredstudents"
